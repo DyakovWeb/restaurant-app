@@ -1,8 +1,37 @@
-# React + Vite
+# Restaurant app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Restaurant app - это проект, предоставляющий информацию о ресторане. Проект реализован с помощью _React_ + сборщик _Vite_, по дизайну из Figma.
 
-Currently, two official plugins are available:
+## Технологии
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- HTML
+- SCSS
+- JavaScript
+
+## Запуск проекта (команды)
+
+1. **npm i**
+2. **npm run server**
+3. **npm run dev**
+
+## Что реализовано
+
+- Адаптация под десктоп, планшеты, смартфоны (принцип desktop-first)
+- Добавление и удаление товара, подсчет суммы
+- Уведомление о добавление товара в корзину
+- Сохранение корзины в localStorage
+- Page loader
+- Динамическая пагинация
+- Карточка товара
+- Sceleton
+
+## Что использовано
+
+- [Redux](https://redux.js.org/introduction/getting-started)
+- [Axios](https://www.npmjs.com/package/axios)
+- [Classnames](https://www.npmjs.com/package/classnames)
+- [Json-server](https://www.npmjs.com/package/json-server)
+- [React-intersection-observer](https://www.npmjs.com/package/react-intersection-observer)
+- [React-lazy-load-image-component](https://www.npmjs.com/package/react-lazy-load-image-component)
+- [React-router-dom](https://reactrouter.com/en/main/start/tutorial)
+- [Redux-persist](https://www.npmjs.com/package/redux-persist)
