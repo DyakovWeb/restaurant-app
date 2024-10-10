@@ -1,0 +1,127 @@
+.card{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   border-radius: 10px;
+   background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
+   color: var(--color-mutted);
+   transition: box-shadow 0.2s ease-in;
+   img {
+      width: 325px;
+      height: 227px;
+      object-fit: cover;
+      @media screen and (max-width: 767px){
+         height: 215px;
+      }
+   }
+
+   &:hover {
+      box-shadow: 0 30px 45px 0 rgba(43, 40, 40, 0.6);
+   }
+}
+
+.info{
+   padding: 15px 16px 18px 20px;
+   display: flex;
+   gap: 15px;
+   flex-direction: column;
+   flex-grow: 1;
+
+   @media screen and (max-width: 767px){
+      padding: 15px;
+   }
+}
+
+.body{
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+   color: var(--color-mutted);
+}
+
+.bodyWrapper{
+   margin-bottom: 5px;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+.weight{
+   font-size: 12px;
+}
+
+.ingredients{
+   max-width: 255px;
+   font-size: 13px;
+   line-height: 1.31;
+
+   @media screen and (max-width: 767px){
+      font-size: 12px; 
+   }
+}
+
+.footer{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.price{
+   font-weight: 600;
+   font-size: 20px;
+   color: var(--color-main);
+}
+
+.imgWrapper {
+   height: 227px;
+   overflow: hidden;
+   border-radius: 10px 10px 0 0;
+
+   @media screen and (max-width: 767px){
+      height: 215px;
+   }
+}
+
+.count {
+   position: absolute;
+   top: -10px;
+   right: -10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 50px;
+   height: 50px;
+   z-index: 99;
+   border-radius: 100%;
+   background-color: #79B282;
+   font-weight: 700;
+   font-size: 20px;
+   color: var(--color-main);
+}
+
+.increase, .decrease {
+   padding: 0 22px;
+   height: 44px;
+   line-height: 44px;
+   display: flex;
+   align-items: center;
+   border-radius: 10px;
+   background: var(--color-active);
+   transition: box-shadow 0.2s ease;
+   &:hover {
+      box-shadow: 0 5px 10px 0 rgba(114, 163, 121, 0.7);
+   }
+
+   &:active {
+      background: #4d7052;
+   }
+}
+
+.increase svg {
+   width: 18px;
+   height: 18px;
+}
+
+.decrease svg {
+   width: 18px;
+}

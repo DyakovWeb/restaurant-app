@@ -1,0 +1,1 @@
+export { ProductCardParams } from "./ui/ProductCardParams";

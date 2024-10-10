@@ -1,0 +1,126 @@
+.product{
+   padding: 20px 30px 13px 35px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+
+   @media screen and (max-width: 1023px) {
+      padding: 20px;
+      flex-direction: row;
+      gap: 18px;
+   }
+
+   @media screen and (max-width: 767px) {
+      padding: 0 20px;
+   }
+}
+
+.wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 18px;
+   height: 18px;
+   border-radius: 50%;
+   background-color: #66906C;
+   transition: background-color 0.2s ease;
+   &:active {
+      background-color: #4d7052;
+   }
+}
+
+.wrapperContent {
+   display: grid;
+   gap: 10px;
+   justify-items: center;
+   @media screen and (max-width: 1023px) {
+      justify-items: start;
+      gap: 32px;
+   }
+}
+
+.img{
+   width: 209px;
+   height: 183px;
+   flex-shrink: 0;
+   object-fit: cover;
+   border-radius: 10px;
+
+   @media screen and (max-width: 767px) {
+      width: 130px;
+      height: 130px;
+   }
+}
+
+.wrapperImg {
+   height: 183px;
+   flex-shrink: 0;
+
+   @media screen and (max-width: 767px) {
+      display: flex;
+      align-items: center;
+   }
+}
+
+.wrapperFooter {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+
+   @media screen and (max-width: 1023px) {
+      align-items: start;
+      flex-direction: row;
+      align-items: center;
+      gap: 50px;
+   }
+
+   @media screen and (max-width: 374px) {
+      gap: 5px;
+   }
+}
+
+.title{
+   font-weight: 700;
+   font-size: 14px;
+   text-transform: uppercase;
+   @media screen and (max-width: 1023px) {
+      font-size: 20px;
+   }
+
+   @media screen and (max-width: 767px) {
+      font-size: 16px;
+   }
+}
+
+.price{
+   font-weight: 700;
+   font-size: 12px;
+   text-wrap: nowrap;
+
+   @media screen and (max-width: 1023px) {
+      font-size: 16px;
+   }
+
+   @media screen and (max-width: 767px) {
+      font-size: 12px;
+   }
+}
+
+.button {
+   display: flex;
+   align-items: center;
+   gap: 7px;
+   font-size: 12px;
+   color: #c6ced1;
+   transition: color 0.2s ease-in;
+   svg {
+      width: 8px;
+      height: 8px;
+   }
+
+   &:hover {
+      color: var(--color-main);
+   }
+}

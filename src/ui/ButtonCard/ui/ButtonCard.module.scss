@@ -1,0 +1,22 @@
+.button {
+   padding: 0 15px 0 20px;
+   height: 44px;
+   line-height: 44px;
+   border-radius: 10px;
+
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   background: var(--color-active);
+   transition: box-shadow 0.2s ease;
+
+   span {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--color-main);
+   }
+
+   &:hover {
+      box-shadow: 0 5px 10px 0 rgba(114, 163, 121, 0.7);
+   }
+}

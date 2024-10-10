@@ -1,0 +1,16 @@
+.parameter {
+   display: grid;
+   gap: 10px;
+}
+
+.parameterName {
+   font-weight: 300;
+   font-size: 12px;
+   color: var(--color-mutted);
+}
+
+.parameterValue {
+   text-wrap: nowrap;
+   font-weight: 500;
+   font-size: 12px;
+}

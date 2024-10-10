@@ -1,0 +1,69 @@
+.info{
+   margin-top: auto;
+   height: 610px;
+   position: relative;
+   top: 93px;
+   z-index: 2;
+}
+
+.content{
+   padding: 70px 100px 70px 70px;
+   display: flex;
+   overflow: hidden;
+   justify-content: space-between;
+   background: linear-gradient(90deg, #292728 40%, rgba(68, 64, 63, 0) 100%), url('./../../../../assets/image/info/bg.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   @media screen and (max-width: 1439px) {
+      padding: 50px;
+      gap: 10px;
+   }
+}
+
+.description{
+   padding-top: 30px;
+   h1 {
+      margin-bottom: 26px;
+   }
+
+   .text {
+      margin-bottom: 60px;
+   }
+}
+
+.text{
+   max-width: 563px;
+   font-size: 20px;
+   line-height: 1.25;
+   color: var(--color-mutted);
+
+   @media screen and (max-width: 1439px) {
+      font-size: 18px;
+   }
+}
+
+.button{
+   padding-left: 64px;
+   padding-right: 25px;
+   height: 59px;
+   line-height: 59px;
+   border: 1px solid rgba(255, 255, 255, 0.2);
+   background-color: rgba(255, 255, 255, 0.05);
+   border-radius: 10px;
+   font-weight: 700;
+   font-size: 13px;
+   text-transform: uppercase;
+   white-space: nowrap;
+   transition: background-color 0.2s ease-in;
+
+   &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+   }
+}
+
+.cards{
+   display: grid;
+   gap: 15px;
+   grid-template-columns: repeat(2, 228px);
+}

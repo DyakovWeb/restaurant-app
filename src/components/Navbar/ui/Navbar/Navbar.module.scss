@@ -1,0 +1,38 @@
+.navbar {
+   padding: 29px 0;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+   background-color: rgba(255, 255, 255, 0.01);
+   & .container {
+      max-width: var(--container-navbar);
+   }
+
+   @media screen and (max-width: 1023px) {
+      padding: 20px 0;
+      overflow-y: hidden;
+      overflow-x: auto;
+      overflow: -moz-scrollbars-none;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      &::-webkit-scrollbar {
+         position: absolute;
+         display: none;
+         background: transparent;
+      }
+   }
+}
+
+.navbarList {
+   display: flex;
+   gap: 50px;
+   
+   & > *:not(:nth-child(-n + 3))  {
+      pointer-events: none;
+      color: #8e8e8e;
+   }
+
+   @media screen and (max-width: 1439px) {
+      gap: 20px;
+      justify-content: space-between;
+   }
+
+}

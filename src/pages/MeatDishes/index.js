@@ -1,0 +1,1 @@
+export { MeatDishesAsync as MeatDishes } from "./ui/MeatDishes.async";

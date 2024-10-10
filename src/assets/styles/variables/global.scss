@@ -1,0 +1,23 @@
+:root {
+   //containers
+   --container-header: 1300px;
+   --container-navbar: 1300px;
+   --container-body: 1395px;
+   --container-basket: 1125px;
+
+   //fonts
+   --font-family: "Roboto", sans-serif;
+   --font-size-title-1: 32px;
+   --font-size-title-2: 32px;
+   --font-size-title-3: 30px;
+   --font-size-title-4: 22px;
+   
+   //colors
+   --color-header: #403C3B;
+   --color-main: #FFFFFF;
+   --color-mutted: #CFCFCF;
+   --color-active: linear-gradient(133deg, #618967 0%, #72a479 100%);
+   --color-active-2: #72A479;
+   --color-bg: linear-gradient(90deg, #494544 0%, #504b4a 100%);
+   --color-basket: #a6a7ab;
+}

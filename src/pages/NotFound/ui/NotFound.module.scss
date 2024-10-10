@@ -1,0 +1,13 @@
+.notFound {
+   padding: 150px 0;
+
+   @media screen and (max-width: 767px) {
+      padding: 70px 0;
+   }
+}
+
+.text {
+   font-size: 30px;
+   text-transform: uppercase;
+   text-align: center;
+}

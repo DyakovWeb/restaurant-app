@@ -1,0 +1,148 @@
+.basketItem{
+   padding: 20px 42px 20px 20px;
+   display: flex;
+   justify-content: space-between;
+   background: var(--color-bg);
+
+   @media screen and (max-width: 1023px) {
+      padding: 20px;
+   }
+}
+
+.wrapper {
+   display: flex;
+   gap: 40px;
+   justify-content: space-between;
+   flex-grow: 1;
+   @media screen and (max-width: 767px) {
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+   }
+}
+
+.imgWrapper {
+   height: 86px;
+   flex-shrink: 0;
+}
+
+.basketItemContent{
+   display: flex;
+   gap: 40px;
+   flex-grow: 1;
+   img {
+      width: 117px;
+      height: 86px;
+      object-fit: cover;
+      border-radius: 10px;
+   }
+   @media screen and (max-width: 767px) {
+      gap: 18px;
+   }
+}
+
+.basketItemText{
+   padding-top: 10px;
+   width: 300px;
+   display: grid;
+   gap: 4px;
+   align-self: baseline;
+   @media screen and (max-width: 767px) {
+      width: 100%;
+   }
+}
+
+.basketItemTitle{
+   text-transform: uppercase;
+   font-weight: 700;
+   font-size: 18px;
+   @media screen and (max-width: 767px) {
+      font-size: 16px;
+   }
+}
+
+.basketItemIngredients{
+   font-size: 12px;
+   color: var(--color-basket);
+}
+
+.basketButtons{
+   margin-left: auto;
+   width: 100%;
+   max-width: 390px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   @media screen and (max-width: 767px) {
+      margin-left: 0;
+      justify-content: unset;
+      gap: 45px;
+   }
+
+   @media screen and (max-width: 374px) {
+      gap: 5px;
+   }
+}
+
+.basketButtonsWrapper {
+   display: flex;
+   gap: 70px;
+   align-items: center;
+   @media screen and (max-width: 1023px) {
+      gap: 40px;
+   }
+   @media screen and (max-width: 767px) {
+      gap: 5px;
+   }
+}
+
+.counter{
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   @media screen and (max-width: 767px) {
+      gap: 10px;
+   }
+}
+
+.quantity, .price{
+   font-weight: 700;
+   font-size: 20px;
+   text-wrap: nowrap;
+
+   @media screen and (max-width: 767px) {
+      font-size: 12px;
+   }
+}
+
+.increase, .decrease, .delete {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 27px;
+   height: 27px;
+   border-radius: 50%;
+   background-color: var(--color-active-2);
+   transition: background-color 0.2s ease;
+
+   &:active {
+      background-color: #4d7052;
+   }
+
+   @media screen and (max-width: 767px) {
+      width: 18px;
+      height: 18px;
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .increase svg, .delete svg{
+      width: 8px;
+      height: 8px;
+   }
+   .decrease svg {
+      width: 8px;
+      height: 2px;
+   }
+}

@@ -1,0 +1,35 @@
+.products{
+   padding-top: 50px;
+
+   h2 {
+      padding-left: 20px;
+      border-left: 4px solid #618967;
+   }
+
+   @media screen and (max-width: 1023px) {
+      padding-bottom: 70px;
+   }
+
+   @media screen and (max-width: 767px){
+      padding-top: 35px;
+
+      h2 {
+         padding-left: 10px;
+      }
+   }
+}
+
+.cards{
+   display: grid;
+   grid-template-columns: repeat(4, 325px);
+   gap: 20px;
+
+   @media screen and (max-width: 1439px){
+      justify-content: center;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 325px));
+   }
+
+   @media screen and (max-width: 767px){
+      gap: 15px;
+   }
+}
